@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Include Ecwid JS SDK -->
+    <script src="https://djqizrxa6f10j.cloudfront.net/ecwid-sdk/js/1.2.9/ecwid-app.js"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/7800d0b5f6.js" crossorigin="anonymous"></script>
+
+    <script>
+      // Initialize the application
+      EcwidApp.init({
+        app_id: "testapp2", // your client_id
+        autoloadedflag: true,
+        autoheight: true,
+      });
+
+      // Get the store ID and access token
+      var storeData = EcwidApp.getPayload();
+      
+      var storeId = storeData.store_id;
+      var accessToken = storeData.access_token;
+      var language = storeData.lang;
+
+      if (storeData.public_token !== undefined) {
+        var publicToken = storeData.public_token;
+      }
+
+      if (storeData.app_state !== undefined) {
+        var appState = storeData.app_state;
+      }
+
+      localStorage.setItem("storeData", JSON.stringify(storeData));
+      // store_data = JSON.parse(localStorage.getItem("storeData"));
+      // console.log(store_data.store_id);
+
+      // store_data = localStorage.getItem('storeData');
+      // do something...
+    </script>
+
+    <!-- Include Ecwid CSS Framework -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://d35z3p2poghz10.cloudfront.net/ecwid-sdk/css/1.3.13/ecwid-app-ui.css"
+    /> -->
+  </head>
+
+  <body class="normalized">
+    <div id="root"></div>
+    <!-- JS for CSS Framework components -->
+    <!-- <script src="https://d35z3p2poghz10.cloudfront.net/ecwid-sdk/css/1.3.13/ecwid-app-ui.min.js
+
+"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+  
+  </body>
+</html>

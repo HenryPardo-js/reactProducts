@@ -1,0 +1,1176 @@
+/* screen - desktop-stylist-next-steps-pop-up */
+
+.desktop-stylist-next-steps-pop-up {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  width: 100vw;
+}
+
+.desktop-stylist-next-steps-pop-up .group-141 {
+  align-items: flex-start;
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.desktop-stylist-next-steps-pop-up .overlap-group1 {
+  align-items: flex-start;
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/629b931af4af1b5122078435/releases/62afa44ea45a13b0bb813521/img/path-42-1x-png@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  display: flex;
+  height: 418px;
+  justify-content: flex-end;
+  margin-top: -6px;
+  min-width: 718px;
+  padding: 15px 19px;
+}
+
+.desktop-stylist-next-steps-pop-up .group-140 {
+  align-items: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5.45px;
+  min-height: 355px;
+  width: 601px;
+}
+
+.desktop-stylist-next-steps-pop-up .overlap-group {
+  height: 96px;
+  margin-left: 3.0px;
+  position: relative;
+  width: 512px;
+}
+
+.desktop-stylist-next-steps-pop-up .change-profile-picture {
+  height: 82px;
+  left: 21px;
+  letter-spacing: 0;
+  line-height: 38px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0px 3px 6px #d8b696;
+  top: 0;
+  width: 470px;
+}
+
+.desktop-stylist-next-steps-pop-up .we-are-honored-exc {
+  left: 0;
+  letter-spacing: 0;
+  line-height: 20px;
+  position: absolute;
+  text-align: center;
+  top: 78px;
+  white-space: nowrap;
+}
+
+.desktop-stylist-next-steps-pop-up .heres-what-to-do-next {
+  letter-spacing: 0.28px;
+  line-height: 20px;
+  margin-left: 3.0px;
+  margin-top: 18px;
+  min-height: 21px;
+  min-width: 208px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.desktop-stylist-next-steps-pop-up .group-139 {
+  align-items: flex-start;
+  display: flex;
+  height: 130px;
+  margin-top: 28px;
+  min-width: 601px;
+}
+
+.desktop-stylist-next-steps-pop-up .group-138 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  min-height: 130px;
+  width: 177px;
+}
+
+.desktop-stylist-next-steps-pop-up .group-131 {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/629b931af4af1b5122078435/releases/62afa44ea45a13b0bb813521/img/group-130@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 65px;
+  margin-right: 1.37px;
+  width: 40px;
+}
+
+.desktop-stylist-next-steps-pop-up .check-your-email-a {
+  height: 42px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-top: 21px;
+  text-align: center;
+  width: 177px;
+}
+
+.desktop-stylist-next-steps-pop-up .group-13 {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-left: 36px;
+  min-height: 130px;
+  width: 177px;
+}
+
+.desktop-stylist-next-steps-pop-up .group-133 {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/629b931af4af1b5122078435/releases/62afa44ea45a13b0bb813521/img/group-132@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 75px;
+  margin-right: 2.85px;
+  width: 58px;
+}
+
+.desktop-stylist-next-steps-pop-up .login-to-the-plunder {
+  height: 42px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-top: 12px;
+  text-align: center;
+  width: 177px;
+}
+
+.desktop-stylist-next-steps-pop-up .group-135 {
+  background-image: url(https://anima-uploads.s3.amazonaws.com/projects/629b931af4af1b5122078435/releases/62afa44ea45a13b0bb813521/img/group-134@1x.png);
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 66px;
+  margin-right: 2.18px;
+  width: 45px;
+}
+
+.desktop-stylist-next-steps-pop-up .view-your-rewards-to {
+  height: 42px;
+  letter-spacing: 0;
+  line-height: 18px;
+  margin-top: 20px;
+  text-align: center;
+  width: 177px;
+}
+
+.desktop-stylist-next-steps-pop-up .button-withdraw-all-earning {
+  align-items: flex-start;
+  background-color: #f2dedb;
+  box-shadow: 2.78px 15.76px 40px #695f970d;
+  display: flex;
+  height: 34px;
+  justify-content: flex-end;
+  margin-left: 0.02px;
+  margin-top: 29px;
+  min-width: 121px;
+  padding: 0 29.0px;
+  cursor: pointer;
+}
+
+.button-withdraw-all-earning:hover {
+  box-shadow: 3px 15.76px 40px #695f970d;
+}
+
+.desktop-stylist-next-steps-pop-up .sign-in {
+  letter-spacing: 0;
+  line-height: 41px;
+  margin-top: -4.0px;
+  min-height: 21px;
+  min-width: 60px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.desktop-stylist-next-steps-pop-up .button-close-copy-2 {
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 19px;
+  display: flex;
+  height: 36px;
+  margin-left: 3px;
+  min-width: 36px;
+  padding: 12.3px 12.4px;
+  cursor: pointer;
+}
+
+.desktop-stylist-next-steps-pop-up .icon-close {
+  height: 10px;
+  object-fit: cover;
+  width: 10px;
+}
+
+
+.esconder-modal-desktop {
+  display: block;
+}
+
+.aparecer-modal-mobile {
+  display: none;
+}
+
+
+
+.avenir-book-normal-eerie-black-11px {
+  color: #202020;
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope-normal-eerie-black-16px {
+  color: #202020;
+  font-family: "Manrope";
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope-bold-cod-gray-14px {
+  color: rgba(7, 6, 6, 1);
+  font-family: "Manrope";
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+}
+.manrope-extra-bold-bizarre-10px {
+  color: #f2dedb;
+  font-family: "Manrope";
+  font-size: 10px;
+  font-weight: 800;
+  font-style: normal;
+}
+.manrope-semi-bold-quick-silver-20px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Manrope";
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+}
+.manrope-extra-extra-bold-bizarre-10px {
+  color: #f2dedb;
+  font-family: "Manrope-ExtraBold";
+  font-size: 10px;
+  font-weight: 800;
+  font-style: normal;
+}
+.opensans-bold-cloud-16px {
+  color: rgba(199, 199, 199, 1);
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+}
+.gotham-bold-eerie-black-34px {
+  color: #202020;
+  font-family: "Gotham-Bold";
+  font-size: 34px;
+  font-weight: 700;
+  font-style: normal;
+}
+.avenir-book-normal-log-cabin-6px {
+  color: rgba(34, 34, 34, 1);
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 6px;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-bold-cloud-16px {
+  color: rgba(199, 199, 199, 1);
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+}
+.manrope-bold-eerie-black-20px {
+  color: #202020;
+  font-family: "Manrope";
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+}
+.avenir-book-normal-white-13px {
+  color: #fff;
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 13px;
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope-regular-normal-quick-silver-12px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Manrope-Regular";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-medium-quick-silver-16px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Montserrat-Medium";
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+}
+.avenir-heavy-normal-white-24px {
+  color: #fff;
+  font-family: "Avenir-Heavy";
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+}
+.border-1px-silver-sand {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(194, 194, 194, 1);
+}
+.manrope-normal-royal-blue-14px {
+  color: rgba(47, 93, 242, 1);
+  font-family: "Manrope";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-heavy-normal-white-4px {
+  color: #fff;
+  font-family: "Avenir-Heavy";
+  font-size: 4px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-heavy-normal-eerie-black-14px {
+  color: #202020;
+  font-family: "Avenir-Heavy";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-heavy-normal-eerie-black-12px {
+  color: #202020;
+  font-family: "Avenir-Heavy";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-medium-eerie-black-18px {
+  color: #202020;
+  font-family: "Poppins-Medium";
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+}
+.montserrat-normal-black-10px {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-normal-eerie-black-12px {
+  color: #202020;
+  font-family: "Avenir";
+  font-size: 12px;
+}
+.avenir-heavy-normal-white-32px {
+  color: #fff;
+  font-family: "Avenir-Heavy";
+  font-size: 32px;
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope-bold-black-13px {
+  color: #000;
+  font-family: "Manrope-Bold";
+  font-size: 13px;
+  font-weight: 700;
+  font-style: normal;
+}
+.manrope-bold-eerie-black-20px {
+  color: #202020;
+  font-family: "Manrope-Bold";
+  font-size: 20px;
+  font-weight: 700;
+  font-style: normal;
+}
+.montserrat-bold-black-34px {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 34px;
+  font-weight: 700;
+  font-style: normal;
+}
+.avenir-book-normal-black-20px {
+  color: #000;
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-bold-cloud-16px {
+  color: rgba(199, 199, 199, 1);
+  font-family: "Montserrat-Bold";
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+}
+.avenir-book-normal-black-15px {
+  color: #000;
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-black-eerie-black-24px {
+  color: #202020;
+  font-family: "Avenir-Black";
+  font-size: 24px;
+  font-weight: 900;
+  font-style: normal;
+}
+.avenir-heavy-normal-sonic-silver-11px {
+  color: rgba(116, 116, 116, 1);
+  font-family: "Avenir-Heavy";
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-bold-white-18px {
+  color: #fff;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+}
+.manrope-semi-bold-quick-silver-20px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Manrope-SemiBold";
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+}
+.avenir-medium-black-14px {
+  color: #000;
+  font-family: "Avenir-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+}
+.opensans-semi-bold-quick-silver-16px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Open Sans";
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+}
+.bodoni72-bold-eerie-black-24px {
+  color: #202020;
+  font-family: "Bodoni72-Bold";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+.gotham-bold-eerie-black-24px {
+  color: #202020;
+  font-family: "Gotham-Bold";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+.avenir-heavy-normal-eerie-black-10px {
+  color: #202020;
+  font-family: "Avenir-Heavy";
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope-extra-bold-geyser-10px {
+  color: rgba(209, 224, 234, 1);
+  font-family: "Manrope";
+  font-size: 10px;
+  font-weight: 800;
+  font-style: normal;
+}
+.avenir-heavy-normal-sonic-silver-14px {
+  color: rgba(116, 116, 116, 1);
+  font-family: "Avenir-Heavy";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope-regular-normal-quick-silver-18px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Manrope-Regular";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+.bodoni72-bold-black-72px {
+  color: #000;
+  font-family: "Bodoni72-Bold";
+  font-size: 72px;
+  font-weight: 700;
+  font-style: normal;
+}
+.manrope-regular-normal-eerie-black-16px {
+  color: #202020;
+  font-family: "Manrope-Regular";
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+}
+.border-1px-dove-gray {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(112, 112, 112, 1);
+}
+.avenir-heavy-normal-sonic-silver-16px {
+  color: rgba(116, 116, 116, 1);
+  font-family: "Avenir-Heavy";
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+}
+.brittanysignature-regular-normal-eerie-black-38px {
+  color: #202020;
+  font-family: "BrittanySignature-Regular";
+  font-size: 38px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-book-normal-quick-silver-18px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-medium-black-18px {
+  color: rgba(2, 2, 2, 1);
+  font-family: "Avenir-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+}
+.avenir-medium-quick-silver-15px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Avenir-Medium", Helvetica;
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+}
+.cairo-semi-bold-eerie-black-20px {
+  color: #202020;
+  font-family: "Cairo-SemiBold";
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+}
+.avenir-book-normal-eerie-black-10px {
+  color: #202020;
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-book-normal-black-8px {
+  color: #000;
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 8px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-medium-cod-gray-10px {
+  color: rgba(7, 6, 6, 1);
+  font-family: "Avenir-Medium", Helvetica;
+  font-size: 10px;
+  font-weight: 500;
+  font-style: normal;
+}
+.opensans-regular-normal-quick-silver-12px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "OpenSans-Regular";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-medium-black-7px {
+  color: #000;
+  font-family: "Avenir-Medium", Helvetica;
+  font-size: 7px;
+  font-weight: 500;
+  font-style: normal;
+}
+.montserrat-normal-quick-silver-15px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope-bold-cod-gray-14px {
+  color: rgba(7, 6, 6, 1);
+  font-family: "Manrope-Bold";
+  font-size: 14px;
+  font-weight: 700;
+  font-style: normal;
+}
+.avenir-medium-black-10px {
+  color: #000;
+  font-family: "Avenir-Medium", Helvetica;
+  font-size: 10px;
+  font-weight: 500;
+  font-style: normal;
+}
+.avenir-medium-black-4px {
+  color: #000;
+  font-family: "Avenir-Medium", Helvetica;
+  font-size: 4px;
+  font-weight: 500;
+  font-style: normal;
+}
+.opensans-normal-quick-silver-12px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-medium-eerie-black-12px {
+  color: #202020;
+  font-family: "Avenir-Medium", Helvetica;
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+}
+.avenir-book-normal-log-cabin-10px {
+  color: rgba(34, 34, 34, 1);
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-bold-black-44px {
+  color: #000;
+  font-family: "Montserrat-Bold";
+  font-size: 44px;
+  font-weight: 700;
+  font-style: normal;
+}
+.gotham-bold-cloud-16px {
+  color: rgba(199, 199, 199, 1);
+  font-family: "Gotham-Bold";
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+}
+.avenir-heavy-normal-eerie-black-20px {
+  color: #202020;
+  font-family: "Avenir-Heavy";
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-heavy-normal-eerie-black-9px {
+  color: #202020;
+  font-family: "Avenir-Heavy";
+  font-size: 9px;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-normal-black-12px {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope-regular-normal-quick-silver-10px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Manrope-Regular";
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-bold-black-24px {
+  color: #000;
+  font-family: "Montserrat-Bold";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+.avenir-book-normal-white-15px {
+  color: #fff;
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-bold-black-34px {
+  color: #000;
+  font-family: "Montserrat-Bold";
+  font-size: 34px;
+  font-weight: 700;
+  font-style: normal;
+}
+.avenir-heavy-normal-sonic-silver-5px {
+  color: rgba(116, 116, 116, 1);
+  font-family: "Avenir-Heavy";
+  font-size: 5px;
+  font-weight: 400;
+  font-style: normal;
+}
+.opensans-bold-cloud-16px {
+  color: rgba(199, 199, 199, 1);
+  font-family: "OpenSans-Bold";
+  font-size: 15px;
+  font-weight: 700;
+  font-style: normal;
+}
+.bodoni72-bold-black-60px {
+  color: #000;
+  font-family: "Bodoni72-Bold";
+  font-size: 60px;
+  font-weight: 700;
+  font-style: normal;
+}
+.manrope-semi-bold-eerie-black-16px {
+  color: #202020;
+  font-family: "Manrope";
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+}
+.avenir-book-normal-eerie-black-12px {
+  color: #202020;
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+.cairo-semi-bold-shady-lady-16px {
+  color: rgba(170, 170, 170, 1);
+  font-family: "Cairo-SemiBold";
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+}
+.avenir-heavy-normal-eerie-black-4px {
+  color: #202020;
+  font-family: "Avenir-Heavy";
+  font-size: 4px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-heavy-normal-eerie-black-7px {
+  color: #202020;
+  font-family: "Avenir-Heavy";
+  font-size: 7px;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-bold-black-44px {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 44px;
+  font-weight: 700;
+  font-style: normal;
+}
+.manrope-regular-normal-royal-blue-14px {
+  color: rgba(47, 93, 242, 1);
+  font-family: "Manrope-Regular";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-medium-eerie-black-14px {
+  color: #202020;
+  font-family: "Avenir-Medium", Helvetica;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+}
+.avenir-heavy-normal-pale-sky-11px {
+  color: rgba(100, 119, 140, 1);
+  font-family: "Avenir-Heavy";
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope-normal-quick-silver-10px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Manrope";
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope-normal-eerie-black-10px {
+  color: #202020;
+  font-family: "Manrope";
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-medium-black-19px {
+  color: #000;
+  font-family: "Avenir-Medium", Helvetica;
+  font-size: 19px;
+  font-weight: 500;
+  font-style: normal;
+}
+.avenir-heavy-normal-sonic-silver-12px {
+  color: rgba(116, 116, 116, 1);
+  font-family: "Avenir-Heavy";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-book-normal-eerie-black-4px {
+  color: #202020;
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 4px;
+  font-weight: 400;
+  font-style: normal;
+}
+.border-0-5px-dove-gray {
+  border-width: 0.5px;
+  border-style: solid;
+  border-color: rgba(112, 112, 112, 1);
+}
+.avenir-book-normal-stack-14px {
+  color: rgba(143, 143, 143, 1);
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-book-normal-log-cabin-20px {
+  color: rgba(34, 34, 34, 1);
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+}
+.poppins-medium-eerie-black-18px {
+  color: #202020;
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+}
+.manrope-extra-extra-bold-geyser-10px {
+  color: rgba(209, 224, 234, 1);
+  font-family: "Manrope-ExtraBold";
+  font-size: 10px;
+  font-weight: 800;
+  font-style: normal;
+}
+.border-2px-dove-gray {
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(112, 112, 112, 1);
+}
+.avenir-heavy-normal-eerie-black-18px {
+  color: #202020;
+  font-family: "Avenir-Heavy";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-heavy-normal-eerie-black-24px {
+  color: #202020;
+  font-family: "Avenir-Heavy";
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+}
+.gotham-bold-black-34px {
+  color: #000;
+  font-family: "Gotham-Bold";
+  font-size: 34px;
+  font-weight: 700;
+  font-style: normal;
+}
+.avenir-book-normal-black-12px {
+  color: rgba(2, 2, 2, 1);
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-black-eerie-black-16px {
+  color: #202020;
+  font-family: "Avenir-Black";
+  font-size: 15px;
+  font-weight: 900;
+  font-style: normal;
+}
+.manrope-regular-normal-eerie-black-10px {
+  color: #202020;
+  font-family: "Manrope-Regular";
+  font-size: 10px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-medium-eerie-black-10px {
+  color: #202020;
+  font-family: "Avenir-Medium", Helvetica;
+  font-size: 10px;
+  font-weight: 500;
+  font-style: normal;
+}
+.montserrat-normal-black-15px {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-book-normal-black-11px {
+  color: #000;
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-heavy-normal-sonic-silver-7px {
+  color: rgba(116, 116, 116, 1);
+  font-family: "Avenir-Heavy";
+  font-size: 7px;
+  font-weight: 400;
+  font-style: normal;
+}
+.montserrat-medium-quick-silver-16px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Montserrat";
+  font-size: 15px;
+  font-weight: 500;
+  font-style: normal;
+}
+.manrope-normal-quick-silver-18px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Manrope";
+  font-size: 18px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-book-normal-eerie-black-6px {
+  color: #202020;
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 6px;
+  font-weight: 400;
+  font-style: normal;
+}
+.bodoni72-bold-eerie-black-22px {
+  color: #202020;
+  font-family: "Bodoni72-Bold";
+  font-size: 22px;
+  font-weight: 700;
+  font-style: normal;
+}
+.manrope-bold-black-13px {
+  color: #000;
+  font-family: "Manrope";
+  font-size: 13px;
+  font-weight: 700;
+  font-style: normal;
+}
+.avenir-mediumoblique-medium-eerie-black-12px {
+  color: #202020;
+  font-family: "Avenir-MediumOblique";
+  font-size: 12px;
+  font-weight: 500;
+  font-style: normal;
+}
+.poppins-bold-white-18px {
+  color: #fff;
+  font-family: "Poppins-Bold";
+  font-size: 18px;
+  font-weight: 700;
+  font-style: normal;
+}
+.avenir-book-normal-sonic-silver-11px {
+  color: rgba(116, 116, 116, 1);
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+}
+.bodoni72-bold-eerie-black-32px {
+  color: #202020;
+  font-family: "Bodoni72-Bold";
+  font-size: 32px;
+  font-weight: 700;
+  font-style: normal;
+}
+.brittanysignature-regular-normal-eerie-black-28px {
+  color: #202020;
+  font-family: "BrittanySignature-Regular";
+  font-size: 28px;
+  font-weight: 400;
+  font-style: normal;
+}
+.border-1px-quick-silver {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(165, 165, 165, 1);
+}
+.avenir-heavy-normal-pale-sky-14px {
+  color: rgba(100, 119, 140, 1);
+  font-family: "Avenir-Heavy";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-black-black-18px {
+  color: #000;
+  font-family: "Avenir-Black";
+  font-size: 18px;
+  font-weight: 900;
+  font-style: normal;
+}
+.gotham-bold-black-44px {
+  color: #000;
+  font-family: "Gotham-Bold";
+  font-size: 44px;
+  font-weight: 700;
+  font-style: normal;
+}
+.montserrat-bold-eerie-black-34px {
+  color: #202020;
+  font-family: "Montserrat-Bold";
+  font-size: 34px;
+  font-weight: 700;
+  font-style: normal;
+}
+.avenir-heavy-normal-white-14px {
+  color: #fff;
+  font-family: "Avenir-Heavy";
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+.manrope-normal-eerie-black-12px {
+  color: #202020;
+  font-family: "Manrope";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-heavy-normal-white-19px {
+  color: #fff;
+  font-family: "Avenir-Heavy";
+  font-size: 19px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-medium-cod-gray-18px {
+  color: rgba(7, 6, 6, 1);
+  font-family: "Avenir-Medium", Helvetica;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+}
+.avenir-book-normal-sonic-silver-14px {
+  color: rgba(116, 116, 116, 1);
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: normal;
+}
+.cairo-semi-bold-eerie-black-20px {
+  color: #202020;
+  font-family: "Cairo";
+  font-size: 20px;
+  font-weight: 600;
+  font-style: normal;
+}
+.manrope-normal-quick-silver-12px {
+  color: rgba(165, 165, 165, 1);
+  font-family: "Manrope";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+.bodoni72-bold-black-43px {
+  color: #000;
+  font-family: "Bodoni72-Bold";
+  font-size: 43px;
+  font-weight: 700;
+  font-style: normal;
+}
+.cairo-semi-bold-shady-lady-16px {
+  color: rgba(170, 170, 170, 1);
+  font-family: "Cairo";
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+}
+.avenir-book-normal-sonic-silver-4px {
+  color: rgba(116, 116, 116, 1);
+  font-family: "Avenir-Book", Helvetica;
+  font-size: 4px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-medium-black-13px {
+  color: #000;
+  font-family: "Avenir-Medium", Helvetica;
+  font-size: 13px;
+  font-weight: 500;
+  font-style: normal;
+}
+.manrope-semi-bold-eerie-black-16px {
+  color: #202020;
+  font-family: "Manrope-SemiBold";
+  font-size: 15px;
+  font-weight: 600;
+  font-style: normal;
+}
+.manrope-regular-normal-eerie-black-12px {
+  color: #202020;
+  font-family: "Manrope-Regular";
+  font-size: 12px;
+  font-weight: 400;
+  font-style: normal;
+}
+.avenir-heavy-normal-pale-sky-4px {
+  color: rgba(100, 119, 140, 1);
+  font-family: "Avenir-Heavy";
+  font-size: 4px;
+  font-weight: 400;
+  font-style: normal;
+}
+.gotham-bold-black-24px {
+  color: #000;
+  font-family: "Gotham-Bold";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+.montserrat-bold-black-24px {
+  color: #000;
+  font-family: "Montserrat";
+  font-size: 24px;
+  font-weight: 700;
+  font-style: normal;
+}
+.border-1px-cararra {
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(235, 235, 235, 1);
+}
+.montserrat-bold-eerie-black-34px {
+  color: #202020;
+  font-family: "Montserrat";
+  font-size: 34px;
+  font-weight: 700;
+  font-style: normal;
+}
+.avenir-heavy-normal-white-11px {
+  color: #fff;
+  font-family: "Avenir-Heavy";
+  font-size: 11px;
+  font-weight: 400;
+  font-style: normal;
+}

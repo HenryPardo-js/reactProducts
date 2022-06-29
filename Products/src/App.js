@@ -14,6 +14,9 @@ function App() {
 
   // funciones y variables para listar todos los productos
   const [dataProducts,setDataProducts]=useState(null);
+  const [datafilter, setdatafilter]=useState(null);
+  const [inputFilter, setInputFilter]=useState(null);
+  const [productsFilters, setproductsFilters]=useState(null);
 
   // ========================================================================
   
@@ -27,6 +30,8 @@ function App() {
     let query = document.getElementById("filterProduct").value.toUpperCase();
     let rowArray = [];
     setTimeout(() => {
+      setInputFilter(query);
+      let productsFiltersList = "";
       dataProducts.forEach(item => {
             let isArray = false;
             for (let key in item) {
@@ -41,12 +46,10 @@ function App() {
             if(isArray === true){
                 rowArray.push(item);
             }
-            setDataProducts([{productId:item.id},{nombre:item.name}, {cod:item.sku}, {stock:item.quantity},  {price:item.price}, {enabled:item.enabled}, {image:item.imageUrl}, {shipping:item.fixedShippingRate}]);
         });
-        // console.log(rowArray);
     }, 500);
-    // setDataProducts(rowArray);
-    // return true;
+    setdatafilter(rowArray);
+    return true;
 }
 
   
@@ -92,12 +95,24 @@ function App() {
             </div>
         </div>
       {
-        dataProducts? (map(dataProducts, (item, index) => (
-            <Product productId={item.id} nombre={item.name} cod={item.sku} stock={item.quantity} price={item.price} enabled={item.enabled} image={item.imageUrl} shipping={item.fixedShippingRate} />))):(<div className="d-flex justify-content-center">
+
+          dataProducts? (datafilter != null? (
+            map(datafilter, (item, index) => (
+              <Product productId={item.id} nombre={item.name} cod={item.sku} stock={item.quantity} price={item.price} enabled={item.enabled} image={item.imageUrl} shipping={item.fixedShippingRate} />))
+          ):(map(dataProducts, (item, index) => (
+            <Product productId={item.id} nombre={item.name} cod={item.sku} stock={item.quantity} price={item.price} enabled={item.enabled} image={item.imageUrl} shipping={item.fixedShippingRate} />)))):(<div className="d-flex justify-content-center">
             <div className="spinner-border" role="status">
               <span className="visually-hidden">Loading...</span>
           </div>
-        </div>)
+          </div>)
+
+        // dataProducts? (map(dataProducts, (item, index) => (
+        //     <Product productId={item.id} nombre={item.name} cod={item.sku} stock={item.quantity} price={item.price} enabled={item.enabled} image={item.imageUrl} shipping={item.fixedShippingRate} />))):(<div className="d-flex justify-content-center">
+        //     <div className="spinner-border" role="status">
+        //       <span className="visually-hidden">Loading...</span>
+        //   </div>
+        // </div>)
+        
       
       }
 

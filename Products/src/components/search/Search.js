@@ -5,10 +5,10 @@ import {getProduct} from "../../api/listaProductos";
 
 function Search(props){
     const {data,dataGeneral,childClicked}=props;
-    console.log("array para recorrer",dataGeneral);
-
+    // console.log("array para recorrer",dataGeneral);
+    // let query = document.getElementById("filterProduct").value;
     function filterProducts(){
-        let query = document.getElementById("filterProduct").value.toUpperCase();
+        let query = document.getElementById("filterProduct").value;
         let rowArray = [];
         setTimeout(() => {
             dataGeneral.forEach(row => {
@@ -23,7 +23,7 @@ function Search(props){
                     }
                 }
                 if(isArray === true){
-                    rowArray.push(row);
+                    rowArray.push(row.id);
                 }
             });
             console.log(rowArray);
@@ -35,7 +35,7 @@ function Search(props){
     async function searchProduct(){
         let query = document.getElementById("filterProduct").value;
         // const response = await getProduct(query);
-        childClicked(filterProducts(),true);
+        childClicked(query);
         // console.log(response);
     }
     return(
@@ -49,12 +49,12 @@ function Search(props){
                             <datalist id="datalistOptions">
                                 {
                                     map(data, (item) =>(
-                                        <option data-id={item.id} label={item.name} value={item.id}></option>
+                                        <option key={item.id} data-id={item.id} label={item.name} value={item.id}></option>
                                     ))
                                 }
                             </datalist>
 
-                            <button className="btn btn-outline-primary" onClick={()=>searchProduct()}><i class="fas fa-search"></i> Search</button>
+                            <button className="btn btn-outline-primary" onClick={()=>searchProduct()}><i className="fas fa-search"></i> Search</button>
                         </div>
                     </div>
                 </div>

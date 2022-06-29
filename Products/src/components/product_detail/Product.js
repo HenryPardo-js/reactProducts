@@ -2,7 +2,7 @@ import React,{useState} from 'react'
 import {changeStatusProduct, changePriceProduct, changeShippingProduct} from "../../api/updateProducts";
 
 export default function Product(props) {
-    const {productId, nombre, cod, stock, price, enabled, image, shipping} = props;
+    const {key,productId, nombre, cod, stock, price, enabled, image, shipping} = props;
     // console.log(storeId, accessToken);
     const [colorStyle,setColorStyle]=useState(false);
     // se usa para mostrar el icono y titulo de las opciones de cada producto
@@ -106,7 +106,7 @@ export default function Product(props) {
     }
     
     return (
-        <div className="content-wrapper">
+        <div key={key} className="content-wrapper">
             <div className="pt-3">
                 <div className="container-fluid">
                     <div className="row">

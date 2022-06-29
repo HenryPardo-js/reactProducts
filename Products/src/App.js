@@ -1,7 +1,5 @@
 import React, { useEffect,useState } from "react";
 // import "./App.css";
-import Search from "./components/search/Search";
-import Shipping from "./components/Shipping/Shipping";
 import Product from "./components/product_detail/Product";
 import {listProducts} from "./api/listaProductos"
 import { map } from "lodash";
@@ -15,39 +13,41 @@ function App() {
   // =====================================================================
 
   // funciones y variables para listar todos los productos
-
   const [dataProducts,setDataProducts]=useState(null);
-  const [dataSetProduct, setDataSetProduct]=useState(null);
-  const [dataAux, setDataAux]=useState(null);
-  const [estadoConsulta, setestadoConsulta]=useState(true);
-
-  
-  
-  async function listarProductos(accessToken,storeId){
-    const response = await listProducts(accessToken,storeId);
-    // console.log(response.items);
-    // setDataProducts(response.items);
-    setDataProducts(response.items);
-    setDataAux(response.items);
-    setDataSetProduct(response.items);
-
-  }
-  // funcion para recibir datos del componente hijo del search
-  function recibirSearch(name, estado){
-    console.log(name, estado);
-    if(name===null || name=== undefined || name===[]){
-      console.log("viene vacio",name);
-      // setDataProducts(dataSetProduct);  
-    }else{
-      // console.log("Array Retorno",name);
-      setDataProducts(name);
-      setestadoConsulta(!estadoConsulta);
-    }
-  }
 
   // ========================================================================
   
-
+  async function listarProductos(accessToken,storeId){
+    const response = await listProducts(accessToken,storeId);
+    setDataProducts(response.items);
+  }
+  
+  
+  function filterProducts(){
+    let query = document.getElementById("filterProduct").value.toUpperCase();
+    let rowArray = [];
+    setTimeout(() => {
+      dataProducts.forEach(item => {
+            let isArray = false;
+            for (let key in item) {
+                let col = item[key];
+                if(typeof col != 'object' && typeof col != 'boolean'&& typeof col !='number' && typeof col != 'undefined'){
+                    let cols = col.toUpperCase();
+                    if(cols.includes(query)){
+                        isArray = true;
+                    }
+                }
+            }
+            if(isArray === true){
+                rowArray.push(item);
+            }
+            setDataProducts([{productId:item.id},{nombre:item.name}, {cod:item.sku}, {stock:item.quantity},  {price:item.price}, {enabled:item.enabled}, {image:item.imageUrl}, {shipping:item.fixedShippingRate}]);
+        });
+        // console.log(rowArray);
+    }, 500);
+    // setDataProducts(rowArray);
+    // return true;
+}
 
   
   // Get the store ID and access token
@@ -69,31 +69,35 @@ function App() {
     
   }, []);
 
-
   return (
     <div className="App">
-      {/* <Search data={dataAux} dataGeneral={dataProducts} childClicked={(name)=>recibirSearch(name)} /> */}
-      <Search data={dataAux} dataGeneral={dataProducts} childClicked={(name,estado)=>recibirSearch(name,estado)} />
-      {/* <Shipping/> */}
+      <div className="content-wrapper">
+            <div className="pt-3">
+                <div className="container-fluid">
+                    <div className="row" >
+                        <div className="col-md-12 d-flex">
+                            <input className="form-control me-2" onKeyUp={()=>filterProducts()} onKeyDown={()=>filterProducts()}  id="filterProduct" list="datalistOptions" placeholder="Search Product" ></input>
+                            <input className="form-control me-2" type="hidden" id="query" list="datalistOptions"></input>
+                            <datalist id="datalistOptions">
+                                {
+                                    map(dataProducts, (item) =>(
+                                        <option key={item.id} data-id={item.id} label={item.name} value={item.id}></option>
+                                    ))
+                                }
+                            </datalist>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
       {
-        dataProducts ? (estadoConsulta ? (map(dataProducts, (item, index) => (
-                 <Product productId={item.id} nombre={item.name} cod={item.sku} stock={item.quantity} price={item.price} enabled={item.enabled} image={item.imageUrl} shipping={item.fixedShippingRate} />
-               )
-               )):( map(dataProducts,(element)=>(console.log(element))) )):(<div className="d-flex justify-content-center">
-                <div className="spinner-border" role="status">
-                  <span className="visually-hidden">Loading...</span>
-               </div>
-             </div>)
-
-
-          //  dataProducts? (dataProducts.length>1? (map(dataProducts, (item, index) => (
-          //       <Product productId={item.id} nombre={item.name} cod={item.sku} stock={item.quantity} price={item.price} enabled={item.enabled} image={item.imageUrl} shipping={item.fixedShippingRate} />
-          //     )
-          //     )): (<Product productId={dataProducts.id} nombre={dataProducts.name} cod={dataProducts.sku} stock={dataProducts.quantity} price={dataProducts.price} enabled={dataProducts.enabled} image={dataProducts.imageUrl} shipping={dataProducts.fixedShippingRate} />)):(<div className="d-flex justify-content-center">
-          //        <div className="spinner-border" role="status">
-          //          <span className="visually-hidden">Loading...</span>
-          //       </div>
-          //     </div>) 
+        dataProducts? (map(dataProducts, (item, index) => (
+            <Product productId={item.id} nombre={item.name} cod={item.sku} stock={item.quantity} price={item.price} enabled={item.enabled} image={item.imageUrl} shipping={item.fixedShippingRate} />))):(<div className="d-flex justify-content-center">
+            <div className="spinner-border" role="status">
+              <span className="visually-hidden">Loading...</span>
+          </div>
+        </div>)
       
       }
 

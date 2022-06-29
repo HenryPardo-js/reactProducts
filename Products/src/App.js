@@ -31,7 +31,6 @@ function App() {
     let rowArray = [];
     setTimeout(() => {
       setInputFilter(query);
-      let productsFiltersList = "";
       dataProducts.forEach(item => {
             let isArray = false;
             for (let key in item) {
@@ -79,15 +78,19 @@ function App() {
                 <div className="container-fluid">
                     <div className="row" >
                         <div className="col-md-12 d-flex">
-                            <input className="form-control me-2" onKeyUp={()=>filterProducts()} onKeyDown={()=>filterProducts()}  id="filterProduct" list="datalistOptions" placeholder="Search Product" ></input>
-                            <input className="form-control me-2" type="hidden" id="query" list="datalistOptions"></input>
-                            <datalist id="datalistOptions">
-                                {
-                                    map(dataProducts, (item) =>(
-                                        <option key={item.id} data-id={item.id} label={item.name} value={item.id}></option>
-                                    ))
-                                }
-                            </datalist>
+                            <div className="input-group mb-3">
+                              <input className="form-control me-2" style={{borderRadius:5}} onKeyUp={()=>filterProducts()} onKeyDown={()=>filterProducts()}  id="filterProduct" list="datalistOptions" placeholder="Search Product" ></input>
+                              <button type="button" style={{borderRadius:5}}  disabled className="btn btn-lg btn-outline-primary"><i class="fas fa-search"></i></button>
+                              <input className="form-control me-2" type="hidden" id="query" list="datalistOptions"></input>
+                              <datalist id="datalistOptions" >
+                                  {
+                                      map(dataProducts, (item) =>(
+                                          <option key={item.id} data-id={item.id} label={item.name} value={item.id}></option>
+                                      ))
+                                  }
+                              </datalist>
+
+                            </div>
 
                         </div>
                     </div>
@@ -105,13 +108,6 @@ function App() {
               <span className="visually-hidden">Loading...</span>
           </div>
           </div>)
-
-        // dataProducts? (map(dataProducts, (item, index) => (
-        //     <Product productId={item.id} nombre={item.name} cod={item.sku} stock={item.quantity} price={item.price} enabled={item.enabled} image={item.imageUrl} shipping={item.fixedShippingRate} />))):(<div className="d-flex justify-content-center">
-        //     <div className="spinner-border" role="status">
-        //       <span className="visually-hidden">Loading...</span>
-        //   </div>
-        // </div>)
         
       
       }

@@ -4,14 +4,38 @@ import {getProduct} from "../../api/listaProductos";
 
 
 function Search(props){
-    const {data,childClicked}=props;
-    // console.log(data);
+    const {data,dataGeneral,childClicked}=props;
+    console.log("array para recorrer",dataGeneral);
+
+    function filterProducts(){
+        let query = document.getElementById("filterProduct").value.toUpperCase();
+        let rowArray = [];
+        setTimeout(() => {
+            dataGeneral.forEach(row => {
+                let isArray = false;
+                for (let key in row) {
+                    let col = row[key];
+                    if(typeof col != 'object' && typeof col != 'boolean'&& typeof col !='number' && typeof col != 'undefined'){
+                        let cols = col.toUpperCase();
+                        if(cols.includes(query)){
+                            isArray = true;
+                        }
+                    }
+                }
+                if(isArray === true){
+                    rowArray.push(row);
+                }
+            });
+            console.log(rowArray);
+        }, 500);
+        return rowArray;
+    }
 
     
     async function searchProduct(){
-        let query= document.getElementById("filterProduct").value;
-        const response = await getProduct(query);
-        childClicked(response);
+        let query = document.getElementById("filterProduct").value;
+        // const response = await getProduct(query);
+        childClicked(filterProducts(),true);
         // console.log(response);
     }
     return(
@@ -20,7 +44,7 @@ function Search(props){
                 <div className="container-fluid">
                     <div className="row" >
                         <div className="col-md-12 d-flex">
-                            <input className="form-control me-2" id="filterProduct" list="datalistOptions" placeholder="Search Product" ></input>
+                            <input className="form-control me-2" onKeyUp={()=>searchProduct()} onKeyDown={()=>searchProduct()}  id="filterProduct" list="datalistOptions" placeholder="Search Product" ></input>
                             <input className="form-control me-2" type="hidden" id="query" list="datalistOptions"></input>
                             <datalist id="datalistOptions">
                                 {

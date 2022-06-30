@@ -131,7 +131,7 @@ export default function Product(props) {
                                                             <div className='input-group'style={{justifyContent:'space-evenly'}}>
                                                                 <div className="form-check form-switch ">
                                                                     <input className="form-check-input success" onClick={()=>changeCheck()} type="checkbox" id={productId} checked={estadoCheck}></input>
-                                                                    <label className="form-check-label" htmlFor={productId} style={{color:(estadoCheck) ? "green" : "gray"}}>{ estadoCheck?"Activado":"Desactivado" }</label>
+                                                                    <label className="form-check-label" htmlFor={productId} style={{color:(estadoCheck) ? "green" : "gray"}}>{ estadoCheck?"Activate":"Deactivate" }</label>
                                                                 </div>
                                                                 <h6 style={{color:(stock > 0) ? "black" : "red"}}>{(stock > 0) ? `Available: ${stock}` : "Unavailable"}</h6>
                                                             </div>  

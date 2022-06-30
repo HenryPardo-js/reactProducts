@@ -16,7 +16,7 @@ function App() {
   const [dataProducts,setDataProducts]=useState(null);
   const [datafilter, setdatafilter]=useState(null);
   const [inputFilter, setInputFilter]=useState(null);
-  const [productsFilters, setproductsFilters]=useState(null);
+  const [contador, setcontador]=useState(0);
 
   // ========================================================================
   
@@ -25,51 +25,67 @@ function App() {
     setDataProducts(response.items);
   }
   
-  
-  function filterProducts(){
-    let query = document.getElementById("filterProduct").value.toUpperCase();
-    let rowArray = [];
-    setTimeout(() => {
-      setInputFilter(query);
-      dataProducts.forEach(item => {
-            let isArray = false;
-            for (let key in item) {
-                let col = item[key];
-                if(typeof col != 'object' && typeof col != 'boolean'&& typeof col !='number' && typeof col != 'undefined'){
-                    let cols = col.toUpperCase();
-                    if(cols.includes(query)){
-                        isArray = true;
-                    }
-                }
-            }
-            if(isArray === true){
-                rowArray.push(item);
-            }
-        });
-    }, 500);
-    setdatafilter(rowArray);
-    return true;
+function changevalue(e){
+  console.log(e.target.value);
+  setInputFilter(e.target.value);
 }
 
+function filterProducts(){
+  let rowArray = [];
+  console.log(inputFilter);
+  let query=inputFilter.toUpperCase();
+    dataProducts.forEach(item => {
+      let isArray = false;
+      for (let key in item) {
+          let col = item[key];
+          if(typeof col != 'object' && typeof col != 'boolean'&& typeof col !='number' && typeof col != 'undefined'){
+              let cols = col.toUpperCase();
+              if(cols.includes(query)){
+                  isArray = true;
+                  setcontador(contador+1);
+              }
+          }
+      }
+      if(isArray === true){
+          rowArray.push(item.id);
+      }
+    });
+  setdatafilter(rowArray);
+  if(rowArray.length === 0){
+    setcontador(0);
+  }
+  console.log(contador);
+  return true;
+}
+
+useEffect(() => {
+  const script = document.createElement("script");
   
-  // Get the store ID and access token
-  useEffect(() => {
-    const script = document.createElement("script");
-    
-    script.src =
-      "https://djqizrxa6f10j.cloudfront.net/ecwid-sdk/js/1.2.9/ecwid-app.js";
+  script.src =
+  "https://djqizrxa6f10j.cloudfront.net/ecwid-sdk/js/1.2.9/ecwid-app.js";
+  
+  script.async = false;
+  document.body.appendChild(script);
+  
+  listarProductos(accessToken,storeId);
+  
+  return () => {
+    // clean up the script when the component in unmounted
+    document.body.removeChild(script);
+  };
+  
+}, []);
 
-    script.async = false;
-    document.body.appendChild(script);
 
+useEffect(()=>{
+  if(inputFilter===null||inputFilter===""){
+    console.log("input vacio");
     listarProductos(accessToken,storeId);
+  }else{
+    filterProducts();
+  }
+},[inputFilter]);
 
-    return () => {
-      // clean up the script when the component in unmounted
-      document.body.removeChild(script);
-    };
-    
-  }, []);
 
   return (
     <div className="App">
@@ -79,8 +95,8 @@ function App() {
                     <div className="row" >
                         <div className="col-md-12 d-flex">
                             <div className="input-group mb-3">
-                              <input className="form-control me-2" style={{borderRadius:5}} onKeyUp={()=>filterProducts()} onKeyDown={()=>filterProducts()}  id="filterProduct" list="datalistOptions" placeholder="Search Product" ></input>
-                              <button type="button" style={{borderRadius:5}}  disabled className="btn btn-lg btn-outline-primary"><i class="fas fa-search"></i></button>
+                              <input className="form-control me-2" style={{borderRadius:5}} onChange={(e)=>changevalue(e)}  id="filterProduct" list="datalistOptions" placeholder="Search Product" ></input>
+                              <button type="button" style={{borderRadius:5}} onClick={()=>filterProducts()}  className="btn btn-lg btn-outline-primary"><i class="fas fa-search"></i></button>
                               <input className="form-control me-2" type="hidden" id="query" list="datalistOptions"></input>
                               <datalist id="datalistOptions" >
                                   {
@@ -98,18 +114,44 @@ function App() {
             </div>
         </div>
       {
+        !inputFilter && (map(dataProducts, (item, index) => (
+               <Product productId={item.id} nombre={item.name} cod={item.sku} stock={item.quantity} price={item.price} enabled={item.enabled} image={item.imageUrl} shipping={item.fixedShippingRate} />)))
+      }
+      {
+        inputFilter && (map(dataProducts, (item, index) => {
+          let idProduct = item.id;
+          if(datafilter != null){
+            let index_r = datafilter.indexOf(idProduct);
+            if(index_r >= 0){
+              return <Product productId={item.id} nombre={item.name} cod={item.sku} stock={item.quantity} price={item.price} enabled={item.enabled} image={item.imageUrl} shipping={item.fixedShippingRate} />
+            }
+          }
+        }))
+      }
+      {
+        contador<1  && ( 
+          <div className="content-wrapper">
+            <div className="pt-1">
+              <div className="container-fluid">
+                <div className="row">
+                  <div className="col-md-12">
+                    <div className="card text-center">
+                      <div className="card-header">
+                        Information
+                      </div>
+                      <div className="card-body">
+                        <i className="fas fa-exclamation-triangle"></i>
+                        <h5 className="card-title">Products not found</h5>
+                        <p className="card-text">Make sure you enter the product name correctly.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-          dataProducts? (datafilter != null? (
-            map(datafilter, (item, index) => (
-              <Product productId={item.id} nombre={item.name} cod={item.sku} stock={item.quantity} price={item.price} enabled={item.enabled} image={item.imageUrl} shipping={item.fixedShippingRate} />))
-          ):(map(dataProducts, (item, index) => (
-            <Product productId={item.id} nombre={item.name} cod={item.sku} stock={item.quantity} price={item.price} enabled={item.enabled} image={item.imageUrl} shipping={item.fixedShippingRate} />)))):(<div className="d-flex justify-content-center">
-            <div className="spinner-border" role="status">
-              <span className="visually-hidden">Loading...</span>
+            </div>
           </div>
-          </div>)
-        
-      
+        )
       }
 
     </div>

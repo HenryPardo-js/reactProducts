@@ -16,7 +16,7 @@ function App() {
   const [dataProducts,setDataProducts]=useState(null);
   const [datafilter, setdatafilter]=useState(null);
   const [inputFilter, setInputFilter]=useState(null);
-  const [contador, setcontador]=useState(0);
+  const [contador, setcontador]=useState(1);
 
   // ========================================================================
   
@@ -130,19 +130,19 @@ useEffect(()=>{
       }
       {
         contador<1  && ( 
-          <div className="content-wrapper">
+          <div className="content-wrapper" style={{paddingBottom:10}}>
             <div className="pt-1">
               <div className="container-fluid">
                 <div className="row">
                   <div className="col-md-12">
-                    <div className="card text-center">
-                      <div className="card-header">
+                    <div className="card border-danger text-center">
+                      <div className="card-header  bg-danger text-white">
                         Information
                       </div>
                       <div className="card-body">
                         <i className="fas fa-exclamation-triangle"></i>
-                        <h5 className="card-title">Products not found</h5>
-                        <p className="card-text">Make sure you enter the product name correctly.</p>
+                        <h5 className="card-title">Haven't found the product?</h5>
+                        <p className="card-text"> Try entering the product name or code.</p>
                       </div>
                     </div>
                   </div>

@@ -1,7 +1,8 @@
 import React, { useEffect,useState } from "react";
-// import "./App.css";
 import Product from "./components/product_detail/Product";
 import {listProducts} from "./api/listaProductos"
+import Backdrop from '@mui/material/Backdrop';
+import CircularProgress from '@mui/material/CircularProgress';
 import { map } from "lodash";
 
 function App() {
@@ -29,6 +30,17 @@ function changevalue(e){
   console.log(e.target.value);
   setInputFilter(e.target.value);
 }
+// ============================================================================
+const [open, setOpen] = useState(true);
+  const handleClose = () => {
+    setOpen(false);
+  };
+  const handleToggle = () => {
+    setOpen(!open);
+  };
+
+
+// =============================================================================
 
 function filterProducts(){
   let rowArray = [];
@@ -113,6 +125,18 @@ useEffect(()=>{
                 </div>
             </div>
         </div>
+        
+        {
+          !dataProducts &&(<div>
+            <Backdrop
+              sx={{ color: '#fff', zIndex: (theme) => theme.zIndex.drawer + 1 }}
+              open={open}
+              onClick={handleClose}
+            >
+              <CircularProgress color="inherit" />
+            </Backdrop>
+          </div>)
+        }
       {
         !inputFilter && (map(dataProducts, (item, index) => (
                <Product productId={item.id} nombre={item.name} cod={item.sku} stock={item.quantity} price={item.price} enabled={item.enabled} image={item.imageUrl} shipping={item.fixedShippingRate} />)))
